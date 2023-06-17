@@ -1,0 +1,18 @@
+# Configuration file for the server
+
+# General configuration block
+configuration:
+    plugin_directory: "./plugins"
+    server:
+        address: "0.0.0.0"
+        port: 8080
+
+logging:
+    level: "info"
+    format: "text"
+    output:
+        destination: "./server.log"
+
+authentication:
+    JWT_secret: "" # DO NOT SET VALUE MANUALLY
+    login_method: "local"
